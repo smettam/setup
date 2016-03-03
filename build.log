@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# need to change the permissions chmod 755 biuld.log
+
+sudo apt-get update
+sudo apt-get -Y install xauth x11-apps
+sudo apt-get -Y install nano xemacs21 xemacs21-supportel
+sudo apt-get -Y install bc wget git make
+sudo apt-get -Y install gfortran-4.8 
+sudo apt-get -Y install g++-4.8
+sudo apt-get -Y install environment-modules
+sudo apt-get -Y install liblapack3
+sudo chown -R ubuntu /mnt
