@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # need to change the permissions chmod 755 biuld.log
+# extra line
 
 sudo apt-get update
 sudo apt-get -Y install xauth x11-apps
