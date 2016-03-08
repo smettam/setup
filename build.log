@@ -14,6 +14,7 @@ sudo apt-get -y install liblapack3
 sudo apt-get -y install build-essential flex bison cmake zlib1g-dev libboost-system-dev libboost-thread-dev libopenmpi-dev openmpi-bin gnuplot libreadline-dev libncurses-dev libxt-dev 
 sudo apt-get -y install qt4-dev-tools libqt4-dev libqt4-opengl-dev freeglut3-dev libqtwebkit-dev 
 sudo apt-get -y install libscotch-dev libcgal-dev
+sudo apt-get -y install vim
 
 sudo chown -R ubuntu /mnt
 
@@ -23,3 +24,6 @@ sudo chown -R ubuntu /mnt
 # unpack these packages
 #tar xzf OpenFOAM-3.0.1.tgz 
 #tar xzf ThirdParty-3.0.1.tgz 
+
+
+
