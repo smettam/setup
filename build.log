@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # need to change the permissions chmod 755 biuld.log
@@ -17,13 +18,22 @@ sudo apt-get -y install libscotch-dev libcgal-dev
 sudo apt-get -y install vim
 
 sudo chown -R ubuntu /mnt
+sudo mkdir /data/app/OpenFOAM
+sudo chown -R ubuntu /data
 
 # Get OpenFoam and ThirdParty on instance
 # wget http://downloads.sourceforge.net/foam/OpenFOAM-3.0.1.tgz?use_mirror=mesh
 # wget http://downloads.sourceforge.net/foam/ThirdParty-3.0.1.tgz?use_mirror=mesh
 # unpack these packages
+# rename tgz files using mv and mv to FOAM_INST_DIR 
 #tar xzf OpenFOAM-3.0.1.tgz 
 #tar xzf ThirdParty-3.0.1.tgz 
-
-
+# add following to .bashrc file 
+#export FOAM_INST_DIR=/data/app/OpenFOAM
+#export FOAM_RUN=/mnt/OpenFOAM/$USER-3.0.1/run
+#foamDotFile=$FOAM_INST_DIR/OpenFOAM-3.0.1/etc/bashrc
+#[ -f $foamDotFile ] && . $foamDotFile
+source .bashrc
+cd /data/app/OpenFOAM 
+nohup ./Allwmake &
 
