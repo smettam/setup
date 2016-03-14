@@ -41,4 +41,9 @@ nohup ./makeParaView4 &
 cd $FOAM_UTILITIES/postProcessing/graphics/PV4Readers
 ./Allwclean
 ./Allwmake 
+#Download MATLAB from matlab website and scp matlab folder onto NeCTAR
+cd MATLAB 
+./install #Note to install Matlab into /data/app/ where OpenFOAM exists
+
+
 
