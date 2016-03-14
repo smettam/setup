@@ -36,4 +36,9 @@ sudo chown -R ubuntu /data
 source .bashrc
 cd /data/app/OpenFOAM 
 nohup ./Allwmake &
+cd $WM_THIRD_PARTY_DIR
+nohup ./makeParaView4 &
+cd $FOAM_UTILITIES/postProcessing/graphics/PV4Readers
+./Allwclean
+./Allwmake 
 
