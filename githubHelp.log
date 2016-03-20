@@ -1,0 +1,11 @@
+git status 
+
+git add filename.txt
+
+git commit -m "Added filename.txt"
+
+git push #puts file in github
+
+git pull #checks to see if your local and github are the sam
+
+git clone https://github.com/smettam/setup.git #pulls repo down in new instance
