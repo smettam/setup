@@ -6,10 +6,12 @@ for ((i=0; i<10; i++)); do
 	echo $angle
 	
         #This creates string to output value for Re
+	#Change Re in /constant/transportproperties preior to creating cases
 	Re=$(echo "scale=3; 100" | bc | awk '{printf "%d", $0}')
 	echo $Re
 
 	#This creates string to output value for cylinder spacing
+	#Change cylinder spacing in mesh prior to creating cases
 	Spacing=$(echo "scale=3; 2" | bc | awk '{printf "%d", $0}')
 	echo $Spacing
 
